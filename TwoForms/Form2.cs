@@ -13,9 +13,10 @@ namespace TwoForms
     public partial class Form2 : Form
     {
         private Form1 F1 = null;
-        public Form2()
+        public Form2(Form1 parent)
         {
             InitializeComponent();
+            F1 = parent;
         }
 
         public string Info
@@ -24,11 +25,11 @@ namespace TwoForms
             set { textBox1.Text = value; }
         }
 
-        public Form1 Fa1
-        {
-            get { return F1; }
-            set { F1 = value; }
-        }
+        //public Form1 Fa1
+        //{
+        //    get { return F1; }
+        //    set { F1 = value; }
+        //}
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

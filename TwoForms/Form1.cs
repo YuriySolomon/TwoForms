@@ -16,7 +16,7 @@ namespace TwoForms
         public Form1()
         {
             InitializeComponent(); 
-            F2 = new Form2();
+            F2 = new Form2(this);
             F2.Show();
         }              
 
